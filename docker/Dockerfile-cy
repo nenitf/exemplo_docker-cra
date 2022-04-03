@@ -1,0 +1,7 @@
+FROM cypress/included:9.0.0
+
+COPY . /e2e
+
+WORKDIR /e2e
+
+RUN yarn install --frozen-lock-file
